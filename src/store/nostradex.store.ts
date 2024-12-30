@@ -18,7 +18,15 @@ export class NostraDex extends Jediswap {
       if (!myData) return [];
       const pools: PoolInfo[] = [];
 
-      const supportedPools = ['ETH-USDC', 'STRK-ETH', 'STRK-USDC', 'USDC-USDT'];
+      const supportedPools = [
+        'ETH-USDC',
+        'STRK-ETH',
+        'STRK-USDC',
+        'USDC-USDT',
+        'xSTRK-STRK',
+        'xSTRK-ETH',
+        'xSTRK-USDC',
+      ];
       // Filter and map only the required pools
       Object.values(myData)
         .filter((poolData: any) => {

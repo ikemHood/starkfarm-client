@@ -10,9 +10,17 @@ const LOGOS = {
   ETH: '/zklend/icons/tokens/eth.svg?w=20',
   STRK: '/zklend/icons/tokens/strk.svg?w=20',
   DAI: '/zklend/icons/tokens/dai.svg?w=20',
+  xSTRK: '/zklend/icons/tokens/xstrk.svg?w=20',
 };
 
-export type TokenName = 'USDT' | 'USDC' | 'ETH' | 'STRK' | 'WBTC' | 'DAI';
+export type TokenName =
+  | 'USDT'
+  | 'USDC'
+  | 'ETH'
+  | 'STRK'
+  | 'WBTC'
+  | 'DAI'
+  | 'xSTRK';
 
 const CONSTANTS = {
   DEX_INCENTIVE_URL:
