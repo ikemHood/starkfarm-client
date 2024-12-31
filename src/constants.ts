@@ -10,7 +10,8 @@ const LOGOS = {
   ETH: '/zklend/icons/tokens/eth.svg?w=20',
   STRK: '/zklend/icons/tokens/strk.svg?w=20',
   DAI: '/zklend/icons/tokens/dai.svg?w=20',
-  xSTRK: '/zklend/icons/tokens/xstrk.svg?w=20',
+  xSTRK: '/imagedelivery/c1f44170-c1b0-4531-3d3b-5f0bacfe1300/logo',
+  sSTRK: '/imagedelivery/e28697ac-a8ba-462f-0d40-ad33b285c200/logo',
 };
 
 export type TokenName =
@@ -20,7 +21,8 @@ export type TokenName =
   | 'STRK'
   | 'WBTC'
   | 'DAI'
-  | 'xSTRK';
+  | 'xSTRK'
+  | 'sSTRK';
 
 const CONSTANTS = {
   DEX_INCENTIVE_URL:

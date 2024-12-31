@@ -45,6 +45,10 @@ const nextConfig = {
         source: '/nimbora/:path*',
         destination: 'https://stats.nimbora.io/:path*',
       },
+      {
+        source: '/imagedelivery/:path*',
+        destination: 'https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/:path*',
+      },
     ];
   },
   async redirects() {
