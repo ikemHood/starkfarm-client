@@ -209,16 +209,16 @@ export class Ekubo extends IDapp<EkuboBaseAprDoc> {
 
           const tvlUsd =
             ((price0 ?? 0) * Number(p.tvl0_total)) /
-            Math.pow(10, token0.decimals) +
+              Math.pow(10, token0.decimals) +
             ((price1 ?? 0) * Number(p.tvl1_total)) /
-            Math.pow(10, token1.decimals);
+              Math.pow(10, token1.decimals);
 
           if (tvlUsd < 10000) return;
           const feesUsd =
             ((price0 ?? 0) * Number(p.fees0_24h)) /
-            Math.pow(10, token0.decimals) +
+              Math.pow(10, token0.decimals) +
             ((price1 ?? 0) * Number(p.fees1_24h)) /
-            Math.pow(10, token1.decimals);
+              Math.pow(10, token1.decimals);
 
           const apyBase = (feesUsd * 365) / tvlUsd;
           const apyReward = springPair ? springPair.currentApr : 0;
