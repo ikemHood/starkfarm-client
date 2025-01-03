@@ -79,6 +79,7 @@ export class Ekubo extends IDapp<EkuboBaseAprDoc> {
     'STRK/USDC',
     'STRK/ETH',
     'kSTRK/STRK',
+    'xSTRK/STRK',
     'USDC/USDT',
     'USDC',
     'USDT',
@@ -240,22 +241,6 @@ export class Ekubo extends IDapp<EkuboBaseAprDoc> {
         .filter((p) => !!p)
         .sort((a, b) => b.tvlUsd - a.tvlUsd);
     }
-  }
-
-  commonVaultFilter(poolName: string) {
-    const supportedPools = [
-      'ETH/USDC',
-      'STRK/USDC',
-      'STRK/ETH',
-      'USDC/USDT',
-      'XSTRK/STRK',
-      'USDC',
-      'USDT',
-      'ETH',
-      'STRK',
-    ];
-    console.log('filter2', poolName, supportedPools.includes(poolName));
-    return supportedPools.includes(poolName);
   }
 
   async getData(): Promise<EkuboBaseAprDoc> {
