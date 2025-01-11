@@ -49,6 +49,10 @@ const nextConfig = {
         source: '/imagedelivery/:path*',
         destination: 'https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/:path*',
       },
+      {
+        source: '/vesu/:path*',
+        destination: 'https://api.vesu.xyz/:path*',
+      },
     ];
   },
   async redirects() {
